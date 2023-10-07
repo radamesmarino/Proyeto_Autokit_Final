@@ -1,0 +1,177 @@
+/* nav bar*/
+.navigation {
+    background-color: #f5e2c9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 0px 20px;*/
+    box-shadow: 0 5px 10px rgba(71, 66, 66, 0.8);
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    margin-top: 0;
+  }
+  
+  .navigation .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 240px;
+    border-radius: 2%;
+    overflow: hidden;
+    
+     
+  }
+  
+  .avatar__img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+     
+  }
+
+  .navigation h1 {
+    font-size: 38px; /* Tamanho da fonte maior (ajuste conforme necessário) */
+    text-shadow: 1px 1px 2px #EA741A; /* Sombra vermelha (ajuste conforme necessário) */
+    letter-spacing: 1px;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin: 0 10px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: black;
+  }
+
+/* corpo central Kits */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 4em;
+    border: 1px #999;
+}
+
+.kit-item {
+    text-align: center;
+    max-width:310px;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    margin:0 auto 50px auto;
+   
+}
+
+
+
+.kit-item--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+  background-color: white;
+  overflow: hidden;
+  box-shadow:0px 10px 50px rgba(0, 0, 0, 0.4);
+}
+
+.kit-item a {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-decoration: none;
+}
+
+.kit-item--img img {
+    width:100%;
+    height:auto;
+    object-fit: cover
+}
+
+.kit-item--add {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#EA741A;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top:-25px;
+    transition:all ease .2s;
+}
+
+.kit-item--img:hover {
+  box-shadow:0px 10px 50px rgba(234, 116, 26, 0.4);
+}
+
+.kit-item--price {
+    font-size:15px;
+    color:#333;
+    margin-top:5px;
+}
+
+.kit-item--name {
+    font-size:20px;
+    font-weight: bold;
+    color:#000;
+    margin-top:5px;
+}
+
+.kit-item--desc {
+    font-size:13px;
+    color:#555;
+    margin-top:10px;
+}
+
+.footer {
+  background-color: #f5e2c9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 5px 10px rgba(71, 66, 66, 0.8);
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  margin-bottom: 0px;
+  bottom: 0%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form{
+
+  width: 600px;
+  margin: 0 auto;
+  
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control label{
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.form-control input{
+  padding: 5px;
+}

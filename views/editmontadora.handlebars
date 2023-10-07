@@ -1,0 +1,19 @@
+<form action = "/montadoras/edit" method="post" class="form">
+    <input type="hidden" name="id_Marca" value="{{marca.id_Marca}}">
+    
+    <a href="">
+            <div class="kit-item--img"><img src="/images/{{marca.marca}}.png"></div>
+            
+    </a>
+    
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+    <input type="text" name="description" placeholder="Digite o nome da montadora" value="{{marca.marca}}">
+    </div>
+    
+    <br>
+    <br>
+    <input type="submit" value="Atualizar">
+    
+    
+</form>

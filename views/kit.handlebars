@@ -1,0 +1,25 @@
+
+<div id="kit-page">
+    
+        <div class="kit-item">
+        <a href="">
+            <div class="kit-item--img"><img src="{{kit.img}}"></div>
+            <div class="kit-item--add">+</div>
+        </a>
+        <div class="kit-item--name">{{kit.description}}</div>
+        <div class="kit-item--desc">Codigo-- {{kit.id_codigo}}</div>
+        <div class="kit-item--desc">EAN-- {{kit.EAN}}</div>
+        <div class="kit-item--price">Preço: R$ {{kit.preco_bruto}}</div>
+        <div class="action">
+            <form action="/kit/edit/{{kit.id_codigo}}">
+            <input type="submit" value="Editar">
+            </form>
+            <form action="../kit/remove/{{kit.id_codigo}}" method="post">
+            <input type="submit" value="Excluir">
+            </form>
+            <a href="/kits">Voltar</a>
+        </div>
+        
+    </div>
+        
+</div>

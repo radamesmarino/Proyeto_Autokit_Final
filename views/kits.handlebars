@@ -1,0 +1,18 @@
+<div class="container">
+    {{#each kit10}}
+   
+    <div class="kit-item">
+        <a href="/kit/{{this.id_codigo}}">
+            <div class="kit-item--img"><img src="{{this.img}}"/></div>
+            <div class="kit-item--add">+</div>
+        </a>
+      
+        <div class="kit-item--name">{{this.description}}</div>
+        <div class="kit-item--desc">Codigo-- {{this.id_codigo}}</div>
+        <div class="kit-item--desc">EAN-- {{this.EAN}}</div>
+        <div class="kit-item--price">Preço: R$ {{this.preco_bruto}}</div>
+        
+    </div>
+ 
+    {{/each}}
+</div>

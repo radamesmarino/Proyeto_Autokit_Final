@@ -1,0 +1,61 @@
+<h1>Cadastre o novo kit aqui</h1>
+<form action = "/kit/update" method="post" class="form">
+    <input type="hidden" name="id_codigo" value="{{kit.id_codigo}}">
+    <input type="hidden" name="img" value="{{kit.img}}">
+    <div class="form-control">
+        <label for="id_codigo">Código: {{kit.id_codigo}}</label>
+        
+    </div>
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+    <input type="text" name="description" placeholder="Digite a aplicação do kit" value="{{kit.description}}">
+    </div>
+    <div class="form-control">
+    <label for="id_grupo">Grupo:</label>
+    <select name="id_grupo">
+         <option value="">Selecione um grupo</option>
+        <option value="1">Arrefecimento</option>
+        <option value="2">Bieletas</option>
+        <option value="14">Bucha Refil</option>
+        <option value="3">Bucha Suspensão</option>
+        <option value="4">Bucha Suspensão Dianteira</option>
+        <option value="5">Bucha Suspensão Traseira</option>
+        <option value="12">Coifa Homocinética</option>
+        <option value="6">Correias</option>
+        <option value="7">Coxim do Câmbio</option>
+        <option value="8">Coxim do Motor</option>
+        <option value="9">Kit Amortecedor</option>
+        <option value="10">Kits Diversos</option>
+        <option value="11">Kit Estabilizador</option>        
+        <option value="13">Kit Trambulador</option>
+    </select>
+    </div>
+    <div class="form-control">
+        <label for="EAN">EAN:</label>
+        <input type="text" name="EAN" placeholder="Digite o codigo de barras do kit" value="{{kit.EAN}}">
+    </div>
+    <div class="form-control">
+        <label for="NCM">NCM:</label>
+        <input type="text" name="NCM" placeholder="Digite o NCM do kit" value="{{kit.NCM}}">
+    </div>
+    <div class="form-control">
+    <label for="id_montadora">Montadora:</label>
+    <select name="id_montadora">
+        <option value="">Selecione uma montadora</option>
+        <option value="1">Fiat</option>
+        <option value="2">Ford</option>
+        <option value="3">GM</option>
+        <option value="4">Volkswagen</option>
+        <option value="5">Importados</option>
+    </select>
+    </div>
+    <div class="form-control">
+        <label for="preco_bruto">Preço Bruto:</label>
+        <input type="text" name="preco_bruto" placeholder="Digite o preço do kit" value="{{kit.preco_bruto}}">
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Atualizar">
+    
+    
+</form>

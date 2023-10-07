@@ -1,0 +1,19 @@
+
+<a href="/kits">Voltar</a>
+<div class="container">
+    {{#each montadora}}
+   
+    <div class="kit-item">
+        <div class="kit-item--img"><img src="/images/{{this.marca}}.png"/></div>
+        <div class="kit-item--name">{{this.marca}}</div>
+        <div class="action">
+            <form action="/montadoras/edit/{{this.id_Marca}}">
+            <input type="submit" value="Editar">
+            </form>
+        </div>
+        
+        
+    </div>
+ 
+    {{/each}}
+</div>

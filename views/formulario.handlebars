@@ -1,0 +1,58 @@
+<h1>Cadastre o novo kit aqui</h1>
+<form action = "/cadastrar" method="post" class="form">
+    <div class="form-control">
+        <label for="id_codigo">Código:</label>
+        <input type="text" name="id_codigo" placeholder="Digite o codigo do kit">
+    </div>
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+    <input type="text" name="description" placeholder="Digite a aplicação do kit">
+    </div>
+    <div class="form-control">
+    <label for="id_grupo">Grupo:</label>
+    <select name="id_grupo">
+         <option value="">Selecione um grupo</option>
+        <option value="1">Arrefecimento</option>
+        <option value="2">Bieletas</option>
+        <option value="14">Bucha Refil</option>
+        <option value="3">Bucha Suspensão</option>
+        <option value="4">Bucha Suspensão Dianteira</option>
+        <option value="5">Bucha Suspensão Traseira</option>
+        <option value="12">Coifa Homocinética</option>
+        <option value="6">Correias</option>
+        <option value="7">Coxim do Câmbio</option>
+        <option value="8">Coxim do Motor</option>
+        <option value="9">Kit Amortecedor</option>
+        <option value="10">Kits Diversos</option>
+        <option value="11">Kit Estabilizador</option>        
+        <option value="13">Kit Trambulador</option>
+    </select>
+    </div>
+    <div class="form-control">
+        <label for="EAN">EAN:</label>
+        <input type="text" name="EAN" placeholder="Digite o codigo de barras do kit">
+    </div>
+    <div class="form-control">
+        <label for="NCM">NCM:</label>
+        <input type="text" name="NCM" placeholder="Digite o NCM do kit">
+    </div>
+    <div class="form-control">
+    <label for="id_montadora">Montadora:</label>
+    <select name="id_montadora">
+        <option value="">Selecione uma montadora</option>
+        <option value="1">Fiat</option>
+        <option value="2">Ford</option>
+        <option value="3">GM</option>
+        <option value="4">Volkswagen</option>
+        <option value="5">Importados</option>
+    </select>
+</div>
+    <div class="form-control">
+        <label for="preco_bruto">Preço Bruto:</label>
+        <input type="text" name="preco_bruto" placeholder="Digite o preço do kit">
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Cadastrar">
+    <a href="/kits">Ver kits cadastrados</a>
+</form>
